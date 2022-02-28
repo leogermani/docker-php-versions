@@ -39,6 +39,7 @@ RUN apt-get update \
     lsb-release \
     apt-transport-https \
     unzip \
+    git \
   && wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg \
   && echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list \
   && apt-get update \
@@ -59,4 +60,4 @@ RUN apt-get update \
 
 EXPOSE 22
 CMD ["/run.sh"]
-VOLUME ["/jetpack"]
+VOLUME ["/project"]
