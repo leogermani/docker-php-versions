@@ -18,7 +18,13 @@ Build the image passing the `PHP_VERSION` and `COMPOSER_PHAR_URL` arguments. Cho
 Below is an example for PHP 5.6
 
 ```
-docker build -t php56 --build-arg PHP_VERSION=5.6 --build-arg --build-arg COMPOSER_PHAR_URL=https://getcomposer.org/download/1.20.25/composer.phar  .
+docker build -t php56 --build-arg PHP_VERSION=5.6 --build-arg COMPOSER_PHAR_URL=https://getcomposer.org/download/1.10.25/composer.phar  .
+```
+
+Below is an example for PHP 7.3
+
+```
+docker build -t php73 --build-arg PHP_VERSION=7.3 --build-arg COMPOSER_PHAR_URL=https://getcomposer.org/download/2.2.9/composer.phar  .
 ```
 
 ## Using
